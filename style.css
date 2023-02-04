@@ -25,4 +25,54 @@ h1{
     
    
 }
+.options{
+    background-color:gray;
+    text-align: center;
+    border:solid black;
+    border-radius:30px;
+    
+    padding:10px;
+    
+    
+    
+}
+.gamedecision{
+    background-color:aquamarine;
+    border-radius: 30px;
+    border:solid black;
+    margin-top:10px;
+}
+img{
+    width:200px;
+    height:200px;
+}
+
+h2{
+    text-align:center;
+}
+
+.resetBtn{
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+
+
+#p1, #p2{
+    color:black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+p{
+    font-weight:bolder;
+    font-size: xx-large;
+}
+
+#reset{
+    margin-top:10px;
+    width:100px;
+    height:50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
 
