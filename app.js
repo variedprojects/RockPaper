@@ -122,4 +122,6 @@ randomCompChoice()
 winner()
 compWins()
 tie()
+checkScore()
+gameOver()
 }
