@@ -19,7 +19,7 @@ h1{
 .container{
     
     border: 3px solid;
-    border-radius:30px;
+    border-radius:5px;
     background-color: green;
     padding:10px;
     
@@ -38,7 +38,7 @@ h1{
     
 }
 .gamedecision{
-    background-color:aquamarine;
+    background-color:purple;
     border-radius: 30px;
     border:solid black;
     margin-top:10px;
@@ -80,3 +80,7 @@ p{
     color:red;
 }
 
+.choose{
+    border: solid black 5px;
+    border-radius: 50%;
+}
