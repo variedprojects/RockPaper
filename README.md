@@ -1,6 +1,6 @@
 # ROCK PAPER SCISSORS 
 
-# Link to live Site: 
+# Link to live Site: https://variedprojects.github.io/RockPaper/
 
 
 ## Motivation

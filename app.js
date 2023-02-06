@@ -2,6 +2,7 @@ let pressButtons = document.querySelectorAll('.choose')
 let printPlayer = document.getElementById('choiceofplayer')
 let printComputer = document.getElementById('choiceofcomputer')
 let printOutcome = document.getElementById('outcome')
+let reset = document.getElementById('reset')
 // I selected all the elements with the choose class. 
 
 // global declarations
@@ -135,20 +136,13 @@ function gameOver(){
   }
 }
 
-function resetGame(){
-  // location.reload();
-  printComputer.innerText = ''
-printOutcome.innerText = ''
-printPlayer.innerText = ''
-yourScore = 0
-compScore = 0
-document.getElementById("your-score").innerText = yourScore;
-document.getElementById("opp-score").innerText = compScore;
 
+function resetGame()
 
+reset.addEventListener('click', (e) => {
+  resetGame()}  )
 
-}
-
+  
 function gameStart(){
 
 randomCompChoice()
