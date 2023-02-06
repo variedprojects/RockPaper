@@ -2,8 +2,6 @@ let pressButtons = document.querySelectorAll('.choose')
 let printPlayer = document.getElementById('choiceofplayer')
 let printComputer = document.getElementById('choiceofcomputer')
 let printOutcome = document.getElementById('outcome')
-let printComputerScore = document.getElementById('opp-score')
-let printPlayerScore = document.getElementById('your-score')
 let reset = document.getElementById('reset')
 // I selected all the elements with the choose class. 
 
@@ -87,18 +85,14 @@ function winner() {
       yourScore += 1;
     printOutcome.innerHTML = "🏆 You win this round! 👊 beats scissors!"
   }
-  printPlayerScore.innerText = yourScore
+  document.getElementById("your-score").innerText = yourScore
 }
 
 // This function will test to see if you won. It will also add to your score if you won.
 
 
 function compWins(){
-if (computer === player) {
-    printOutcome.innerText = 'Its a draw! Please proceed to next round. 😮'
-    
-  }
-if (computer == "p" && player == "r") {
+  if (computer == "p" && player == "r") {
     compScore += 1;
   printOutcome.innerText = ' You lose this round! ✋ beats rock!'
 }
@@ -112,7 +106,7 @@ if (computer == 'r' && player == "s") {
     compScore += 1;
   printOutcome.innerText = " You lose this round! 👊 beats scissors!"
 }
-printComputerScore.innerText = compScore
+document.getElementById("opp-score").innerText = compScore
 }
 
 function tie() {
@@ -128,20 +122,20 @@ function checkScore() {
       printOutcome.innerHTML = `GAME OVER! Score is ${yourScore} - ${compScore}. Please click reset below to play again.`
       window.alert("Game Over!")
       window.alert(`Score is ${yourScore} -  ${compScore}`)
+      printOutcome.innerText = `Score is ${yourScore} -  ${compScore}`
       resetGame()
       
   }
   
 }
 
-// function gameOver(){
-//   if (yourScore>=6 || compScore>=6){
+function gameOver(){
+  if (yourScore>=6 || compScore>=6){
       
-//       window.alert("Click Restart Game Button to Play Again!")
-//       resetGame()
-//   }
-// }
-// may not need this function
+      window.alert(`Click Restart Game Button to Play Again!`)
+      resetGame()
+  }
+}
 
 
 function resetGame(){
@@ -151,13 +145,13 @@ printOutcome.innerText = ''
 printPlayer.innerText = ''
 yourScore = 0
 compScore = 0
-printPlayerScore.innerText = yourScore;
-printComputerScore.innerText = compScore;
+document.getElementById("your-score").innerText = yourScore;
+document.getElementById("opp-score").innerText = compScore;
 }
 // This code sets all my changing displayed values to empty strings and 0 for score
 
 reset.addEventListener('click', (e) => {
-    window.alert("Resetting Game Board...")
+  window.alert(`Resetting Game Board...`)
   resetGame()}  )
 
 function gameStart(){
@@ -167,5 +161,5 @@ winner()
 compWins()
 tie()
 checkScore()
-// gameOver()
+gameOver()
 }
