@@ -1,11 +1,11 @@
 # ROCK PAPER SCISSORS 
 
-## Motivation
+## ***Motivation***
 Motivation for this project was to help practice my HTML, CSS, and JS skills.
 To create a interactive game to share with classmates.
 To discover new things while coding.
 
-## Game Rules 
+## ***Game Rules***
 First to 5 points wins the game, then it resets and you play again.
 Rock beats scissors
 Paper beats rocks
@@ -59,8 +59,9 @@ the winner would be printed out in the results.
 ### template literals
 Template literals helped me update my score in my window prompt section.
 
-### window.reload
+### ~~ ~~window.reload~~ ~~
 this piece of tech helped me reset my game board.
+however I decided to put empty strings instead of using this method.
 
 .innertext and innerhtml
 these two help me update the players and computers choice, the results, 
