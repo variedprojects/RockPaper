@@ -15,6 +15,7 @@ Scissors beats paper
 OOP
 
 ## Code Thoughts and Approach
+Each round start will start through player 1 choosing their option.
 
 - Player 1 chooses an option 
  - this will be done through adding an event listener to a button. 
