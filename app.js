@@ -2,6 +2,8 @@ let pressButtons = document.querySelectorAll('.choose')
 let printPlayer = document.getElementById('choiceofplayer')
 let printComputer = document.getElementById('choiceofcomputer')
 let printOutcome = document.getElementById('outcome')
+let printComputerScore = document.getElementById('opp-score')
+let printPlayerScore = document.getElementById('your-score')
 let reset = document.getElementById('reset')
 // I selected all the elements with the choose class. 
 
@@ -85,7 +87,7 @@ function winner() {
       yourScore += 1;
     printOutcome.innerHTML = "🏆 You win this round! 👊 beats scissors!"
   }
-  document.getElementById("your-score").innerText = yourScore
+  printPlayerScore.innerText = yourScore
 }
 
 // This function will test to see if you won. It will also add to your score if you won.
@@ -112,7 +114,7 @@ document.getElementById("opp-score").innerText = compScore
 function tie() {
    
   if (computer === player) {
-    printOutcome.innerText = 'Its a draw! Please proceed to next round. 😮'
+    printComputerScore.innerText = 'Its a draw! Please proceed to next round. 😮'
     
   }
 }
@@ -128,13 +130,14 @@ function checkScore() {
   
 }
 
-function gameOver(){
-  if (yourScore>=6 || compScore>=6){
+// function gameOver(){
+//   if (yourScore>=6 || compScore>=6){
       
-      window.alert("Click Restart Game Button to Play Again!")
-      resetGame()
-  }
-}
+//       window.alert("Click Restart Game Button to Play Again!")
+//       resetGame()
+//   }
+// }
+// may not need this function
 
 
 function resetGame(){
@@ -144,8 +147,8 @@ printOutcome.innerText = ''
 printPlayer.innerText = ''
 yourScore = 0
 compScore = 0
-document.getElementById("your-score").innerText = yourScore;
-document.getElementById("opp-score").innerText = compScore;
+printPlayerScore.innerText = yourScore;
+printComputerScore.innerText = compScore;
 }
 // This code sets all my changing displayed values to empty strings and 0 for score
 
@@ -160,5 +163,5 @@ winner()
 compWins()
 tie()
 checkScore()
-gameOver()
+// gameOver()
 }
