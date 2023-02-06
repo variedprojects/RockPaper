@@ -94,7 +94,11 @@ function winner() {
 
 
 function compWins(){
-  if (computer == "p" && player == "r") {
+if (computer === player) {
+    printOutcome.innerText = 'Its a draw! Please proceed to next round. 😮'
+    
+  }
+if (computer == "p" && player == "r") {
     compScore += 1;
   printOutcome.innerText = ' You lose this round! ✋ beats rock!'
 }
