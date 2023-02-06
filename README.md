@@ -11,6 +11,15 @@ Rock beats scissors
 Paper beats rocks
 Scissors beats paper
 
+## ***Game Flow***
+1. Player chooses rock paper or scissors
+2. Computer generates a random choice for rock paper or scissors
+3. player and computer options are compared.
+4. result is printed from the comparison
+5. score is updated.
+6.checks score to see if someone won overall game.
+7. reset board or continue playing..
+
 ## Code Style
 HTML, CSS, JAVASCRIPT
 
