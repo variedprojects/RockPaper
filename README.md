@@ -68,7 +68,7 @@ the winner would be printed out in the results.
 ### template literals
 Template literals helped me update my score in my window prompt section.
 
-###  ~~window.reload~~ 
+###  ~~location.reload~~ 
 this piece of tech helped me reset my game board.
 however I decided to put empty strings instead of using this method.
 
