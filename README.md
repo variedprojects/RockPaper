@@ -1,14 +1,15 @@
 # ROCK PAPER SCISSORS 
 
-# Link to live Site: https://variedprojects.github.io/RockPaper/
-
-
 ## Motivation
 Motivation for this project was to help practice my HTML, CSS, and JS skills.
 To create a interactive game to share with classmates.
+To discover new things while coding.
 
 ## Game Rules 
-First to 5 points wins the game
+First to 5 points wins the game, then it resets and you play again.
+Rock beats scissors
+Paper beats rocks
+Scissors beats paper
 
 ## Code Style
 OOP
@@ -90,3 +91,8 @@ I would like there to be sounds in the background.
 
 ### design icons
 I'd like my icons to be animated. 
+
+
+###### Link to live Site: 
+
+
