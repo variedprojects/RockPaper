@@ -137,12 +137,21 @@ function gameOver(){
 }
 
 
-function resetGame()
+function resetGame(){
+  // location.reload();
+  printComputer.innerText = ''
+printOutcome.innerText = ''
+printPlayer.innerText = ''
+yourScore = "0"
+compScore = "0"
+document.getElementById("your-score").innerText = yourScore;
+document.getElementById("opp-score").innerText = compScore;
+}
+// This code sets all my changing displayed values to empty strings and 0 for score
 
 reset.addEventListener('click', (e) => {
   resetGame()}  )
 
-  
 function gameStart(){
 
 randomCompChoice()
