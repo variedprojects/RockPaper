@@ -114,7 +114,7 @@ document.getElementById("opp-score").innerText = compScore
 function tie() {
    
   if (computer === player) {
-    printComputerScore.innerText = 'Its a draw! Please proceed to next round. 😮'
+    printOutcome.innerText = 'Its a draw! Please proceed to next round. 😮'
     
   }
 }
