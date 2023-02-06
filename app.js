@@ -112,7 +112,7 @@ if (computer == 'r' && player == "s") {
     compScore += 1;
   printOutcome.innerText = " You lose this round! 👊 beats scissors!"
 }
-document.getElementById("opp-score").innerText = compScore
+printComputerScore.innerText = compScore
 }
 
 function tie() {
