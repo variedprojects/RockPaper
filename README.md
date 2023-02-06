@@ -67,11 +67,12 @@ and score
 
 ### Problems 
 
-## event.target 
+## event.target and onclick
  -I had an issue with making the button return a certain value.
  -I consololed log with the event actually was in order to better understand what I could do.
 -I ended up making the code return a specific value depending on the button clicked.
 -There may have been a better approach.
+-onclick is a short hand approach to event listener but only for the click
 
 
 ### design background
