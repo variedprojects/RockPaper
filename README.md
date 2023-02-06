@@ -1,14 +1,19 @@
 # ROCK PAPER SCISSORS 
 
+# Link to live Site: 
+
 
 ## Motivation
 Motivation for this project was to help practice my HTML, CSS, and JS skills.
 To create a interactive game to share with classmates.
 
+## Game Rules 
+First to 5 points wins the game
+
 ## Code Style
 OOP
 
-## Code Thoughts
+## Code Thoughts and Approach
 
 - Player 1 chooses an option 
  - this will be done through adding an event listener to a button. 
@@ -34,3 +39,14 @@ OOP
 - game is over or continues based on score
  -an if statement will helps us view the current score to see if someone has won.
 
+### Problems 
+
+## event.target 
+ -I had an issue with making the button return a certain value.
+ -I consololed log with the event actually was in order to better understand what I could do.
+-I ended up making the code return a specific value depending on the button clicked.
+-There may have been a better approach.
+
+
+## design issues
+I wanted to make a live background

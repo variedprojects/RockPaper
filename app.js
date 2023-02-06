@@ -116,6 +116,25 @@ function tie() {
   }
 }
 
+function checkScore() {
+  if(yourScore>=5 || compScore>=5){
+      printOutcome.innerHTML = `GAME OVER! Score is ${yourScore} - ${compScore}. Please click reset below to play again.`
+      window.alert("Game Over!")
+      window.alert(`Score${yourScore} -  ${compScore}`)
+      resetGame()
+      
+  }
+  
+}
+
+function gameOver(){
+  if (yourScore>=6 || compScore>=6){
+      
+      window.alert(`Click Restart Game Button to Play Again!`)
+      resetGame()
+  }
+}
+
 function gameStart(){
 
 randomCompChoice()
