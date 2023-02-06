@@ -131,7 +131,7 @@ function checkScore() {
 function gameOver(){
   if (yourScore>=6 || compScore>=6){
       
-      window.alert(`Click Restart Game Button to Play Again!`)
+      window.alert("Click Restart Game Button to Play Again!")
       resetGame()
   }
 }
@@ -150,7 +150,7 @@ document.getElementById("opp-score").innerText = compScore;
 // This code sets all my changing displayed values to empty strings and 0 for score
 
 reset.addEventListener('click', (e) => {
-    window.alert(`Resetting Game Board...`)
+    window.alert("Resetting Game Board...")
   resetGame()}  )
 
 function gameStart(){
