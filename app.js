@@ -150,6 +150,7 @@ document.getElementById("opp-score").innerText = compScore;
 // This code sets all my changing displayed values to empty strings and 0 for score
 
 reset.addEventListener('click', (e) => {
+    window.alert(`Resetting Game Board...`)
   resetGame()}  )
 
 function gameStart(){
