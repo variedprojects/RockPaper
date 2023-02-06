@@ -3,8 +3,8 @@ let printPlayer = document.getElementById('choiceofplayer')
 let printComputer = document.getElementById('choiceofcomputer')
 let printOutcome = document.getElementById('outcome')
 let reset = document.getElementById('reset')
-let printYourScore = document.getElementById("your-score")
-let printCompScore = document.getElementById("opp-score")
+let printYourScore = document.getElementById("player-score")
+let printCompScore = document.getElementById("computer-score")
 // I selected all the elements with the choose class. 
 
 // global declarations
