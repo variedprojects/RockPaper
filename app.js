@@ -94,17 +94,17 @@ function winner() {
 function compWins(){
   if (computer == "p" && player == "r") {
     compScore += 1;
-  printOutcome.innerText = '🏆 You lose this round! ✋ beats rock!'
+  printOutcome.innerText = ' You lose this round! ✋ beats rock!'
 }
 
 if (computer == "s" && player == "p") {
     compScore += 1;
-  printOutcome.innerText = "🏆 You lose this round! ✌ beats paper!"
+  printOutcome.innerText = " You lose this round! ✌ beats paper!"
 }
 
 if (computer == 'r' && player == "s") {
     compScore += 1;
-  printOutcome.innerText = "🏆 You lose this round! 👊 beats scissors!"
+  printOutcome.innerText = " You lose this round! 👊 beats scissors!"
 }
 document.getElementById("opp-score").innerText = compScore
 }

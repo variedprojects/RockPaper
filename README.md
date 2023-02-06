@@ -39,6 +39,31 @@ OOP
 - game is over or continues based on score
  -an if statement will helps us view the current score to see if someone has won.
 
+ ### Technologies Used
+
+### eventlistener
+I used eventlistener of click in order to start the game
+When I click on an icon the players choice is selected.
+After the players choice is recognized a gamestart() function is called
+This function helps us create the computers choice and then compares our choices 
+to come up with a result.
+Everytime the player clicks a choice.. a new round is started.
+
+
+### if statements
+I used if statements to help decide who wins. If certain conditions were met
+the winner would be printed out in the results.
+
+### template literals
+Template literals helped me update my score in my window prompt section.
+
+### window.reload
+this piece of tech helped me reset my game board.
+
+.innertext and innerhtml
+these two help me update the players and computers choice, the results, 
+and score
+
 ### Problems 
 
 ## event.target 
@@ -48,5 +73,20 @@ OOP
 -There may have been a better approach.
 
 
-## design issues
-I wanted to make a live background
+### design background
+I wanted to make a live animated background but ended up with a more classic approach. 
+
+### Reset Button
+I originally had my reset button refresh the page.
+I then decided to reset my score and results to empty strings instead
+
+
+### Check Score
+I'm still trying to figure out how to make an animated window pop up instead of window prompt to print the score.
+
+
+### design sound
+I would like there to be sounds in the background.
+
+### design icons
+I'd like my icons to be animated. 
