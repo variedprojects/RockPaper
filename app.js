@@ -120,7 +120,7 @@ function checkScore() {
   if(yourScore>=5 || compScore>=5){
       printOutcome.innerHTML = `GAME OVER! Score is ${yourScore} - ${compScore}. Please click reset below to play again.`
       window.alert("Game Over!")
-      window.alert(`Score${yourScore} -  ${compScore}`)
+      window.alert(`Score is ${yourScore} -  ${compScore}`)
       resetGame()
       
   }
@@ -133,6 +133,20 @@ function gameOver(){
       window.alert(`Click Restart Game Button to Play Again!`)
       resetGame()
   }
+}
+
+function resetGame(){
+  // location.reload();
+  printComputer.innerText = ''
+printOutcome.innerText = ''
+printPlayer.innerText = ''
+yourScore = 0
+compScore = 0
+document.getElementById("your-score").innerText = yourScore;
+document.getElementById("opp-score").innerText = compScore;
+
+
+
 }
 
 function gameStart(){
