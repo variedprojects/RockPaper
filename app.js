@@ -3,7 +3,7 @@ let printPlayer = document.getElementById('choiceofplayer')
 let printComputer = document.getElementById('choiceofcomputer')
 let printOutcome = document.getElementById('outcome')
 let reset = document.getElementById('reset')
-let printYourScore = document.getElementById("player-score")
+let printPlayerScore = document.getElementById("player-score")
 let printCompScore = document.getElementById("computer-score")
 // I selected all the elements with the choose class. 
 
@@ -132,7 +132,7 @@ function checkScore() {
 }
 
 function gameOver(){
-  if (yourScore>=6 || compScore>=6){
+  if (playerScore>=6 || compScore>=6){
       
       window.alert(`Click Restart Game Button to Play Again!`)
       resetGame()
