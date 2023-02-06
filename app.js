@@ -3,6 +3,8 @@ let printPlayer = document.getElementById('choiceofplayer')
 let printComputer = document.getElementById('choiceofcomputer')
 let printOutcome = document.getElementById('outcome')
 let reset = document.getElementById('reset')
+let printYourScore = document.getElementById("your-score")
+let printCompScore = document.getElementById("opp-score")
 // I selected all the elements with the choose class. 
 
 // global declarations
@@ -85,7 +87,7 @@ function winner() {
       yourScore += 1;
     printOutcome.innerHTML = "🏆 You win this round! 👊 beats scissors!"
   }
-  document.getElementById("your-score").innerText = yourScore
+  printYourScore.innerText = yourScore
 }
 
 // This function will test to see if you won. It will also add to your score if you won.
@@ -106,7 +108,7 @@ if (computer == 'r' && player == "s") {
     compScore += 1;
   printOutcome.innerText = " You lose this round! 👊 beats scissors!"
 }
-document.getElementById("opp-score").innerText = compScore
+printCompScore.innerText = compScore
 }
 
 function tie() {
@@ -146,7 +148,8 @@ printPlayer.innerText = ''
 yourScore = 0
 compScore = 0
 document.getElementById("your-score").innerText = yourScore;
-document.getElementById("opp-score").innerText = compScore;
+printCompScore.innerText = compScore;
+printYourScore.innerText = yourScore;
 }
 // This code sets all my changing displayed values to empty strings and 0 for score
 
