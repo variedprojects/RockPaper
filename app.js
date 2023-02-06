@@ -142,8 +142,8 @@ function resetGame(){
   printComputer.innerText = ''
 printOutcome.innerText = ''
 printPlayer.innerText = ''
-yourScore = "0"
-compScore = "0"
+yourScore = 0
+compScore = 0
 document.getElementById("your-score").innerText = yourScore;
 document.getElementById("opp-score").innerText = compScore;
 }
