@@ -12,7 +12,7 @@ Paper beats rocks
 Scissors beats paper
 
 ## Code Style
-OOP
+HTML, CSS, JAVASCRIPT
 
 ## Code Thoughts and Approach
 **Each round start will start through player 1 choosing their option.**
