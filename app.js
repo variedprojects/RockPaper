@@ -10,7 +10,7 @@ let printCompScore = document.getElementById("computer-score")
 // global declarations
 let player
 let computer 
-let yourScore = 0
+let playerScore = 0
 let compScore = 0
 // These declarations helps us keep track of the players and computers choice per round
 
@@ -74,20 +74,20 @@ function winner() {
     
   }
   if (computer == "r" && player == "p") {
-      yourScore += 1;
+      playerScore += 1;
     printOutcome.innerHTML = '🏆 You win this round! ✋ beats rock!'
   }
   
   if (computer == "p" && player == "s") {
-      yourScore += 1;
+      playerScore += 1;
     printOutcome.innerHTML = "🏆 You win this round! ✌ beats paper!"
   }
  
   if (computer == 's' && player == "r") {
-      yourScore += 1;
+      playerScore += 1;
     printOutcome.innerHTML = "🏆 You win this round! 👊 beats scissors!"
   }
-  printYourScore.innerText = yourScore
+  printPlayerScore.innerText = playerScore
 }
 
 // This function will test to see if you won. It will also add to your score if you won.
@@ -120,11 +120,11 @@ function tie() {
 }
 
 function checkScore() {
-  if(yourScore>=5 || compScore>=5){
-      printOutcome.innerHTML = `GAME OVER! Score is ${yourScore} - ${compScore}. Please click reset below to play again.`
+  if(playerScore>=5 || compScore>=5){
+      printOutcome.innerHTML = `GAME OVER! Score is ${playerScore} - ${compScore}. Please click reset below to play again.`
       window.alert("Game Over!")
-      window.alert(`Score is ${yourScore} -  ${compScore}`)
-      printOutcome.innerText = `Score is ${yourScore} -  ${compScore}`
+      window.alert(`Score is ${playerScore} -  ${compScore}`)
+      printOutcome.innerText = `Score is ${playerScore} -  ${compScore}`
       resetGame()
       
   }
@@ -145,11 +145,11 @@ function resetGame(){
   printComputer.innerText = ''
 printOutcome.innerText = ''
 printPlayer.innerText = ''
-yourScore = 0
+playerScore = 0
 compScore = 0
-document.getElementById("your-score").innerText = yourScore;
+document.getElementById("your-score").innerText = playerScore;
 printCompScore.innerText = compScore;
-printYourScore.innerText = yourScore;
+printPlayerScore.innerText = playerScore;
 }
 // This code sets all my changing displayed values to empty strings and 0 for score
 
